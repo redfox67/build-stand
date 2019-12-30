@@ -1,0 +1,192 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "build stand",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MoveIntent",
+                    "slots": [
+                        {
+                            "name": "Direction",
+                            "type": "DirectionType"
+                        },
+                        {
+                            "name": "Angle",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{Direction} now",
+                        "{Direction} {Angle} degrees",
+                        "move {Direction} for {Angle} degrees"
+                    ]
+                },
+                {
+                    "name": "SetSpeedIntent",
+                    "slots": [
+                        {
+                            "name": "Speed",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "set speed {Speed} percent",
+                        "set {Speed} percent speed",
+                        "set speed to {Speed} percent"
+                    ]
+                },
+                {
+                    "name": "SetCommandIntent",
+                    "slots": [
+                        {
+                            "name": "Command",
+                            "type": "CommandType"
+                        }
+                    ],
+                    "samples": [
+                        "do {Command}",
+                        "move in a {Command}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DirectionType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "stop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "halt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "down"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tilt right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tilt left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "turn right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "turn left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tilt up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tilt down"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rotate right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "left"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rotate left"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "CommandType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "circle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reset"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "set level"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rotate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "turn around"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tilt and turn right"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tilt and turn left"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
